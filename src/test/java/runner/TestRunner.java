@@ -7,7 +7,7 @@ import utility.BrowserDriver;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(publish = true,features= "src/test/java/features",
-        glue={"StepDefinition","hooks"},tags="@jobsearch",
+        glue={"StepDefinition","hooks"},
         plugin={"pretty","html:target/cucumber-html-report","json:cucumber.json"},
         monochrome = true
 )
